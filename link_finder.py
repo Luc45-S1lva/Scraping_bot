@@ -24,8 +24,8 @@ def write_links(links):
     with io.open(filename, 'a', encoding='utf-8') as f:
         for link in links:
             f.write(link + "\n")
-            if link == None:
-                print ("Busca finalizada.")
+        if link == None:
+            print ("Busca finalizada.")
 
 # Loop principal
 while queue:
