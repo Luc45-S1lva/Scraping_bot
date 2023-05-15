@@ -1,2 +1,2 @@
 # Scraping_bot
-After run, verify .txt in documents.
+After run, verify .txt in local save.
