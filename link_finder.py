@@ -21,11 +21,12 @@ if not os.path.exists(filename):
 
 # Função para escrever os links no arquivo de texto
 def write_links(links):
-    with io.open(filename, 'a', encoding='utf-8') as f:
-        for link in links:
-            f.write(link + "\n")
-        if link == None:
-            print ("Busca finalizada.")
+    if links == None:
+        print ("Busca finalizada.")
+    else:
+        with io.open(filename, 'a', encoding='utf-8') as f:
+            for link in links:
+                f.write(link + "\n")
 
 # Loop principal
 while queue:
